@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
     <style>
         * {
             margin: 0;
@@ -26,6 +27,87 @@
             background: #FFFFFF 0% 0% no-repeat padding-box;
             margin: 0 auto;
         }
+        
+        /* Aru */
+        
+        .purple-bg {
+           background: #4a2783;
+		}
+		#social {
+			padding: 20px;
+		}
+
+		.container {
+			margin: 0 auto;
+			max-width: 1000px;
+			padding: 0;
+		}
+		.cf:after, .cf:before {
+          content: " ";
+          display: table;
+        }
+		#social li a [class*=" flaticon-"]:before {
+			color: #4a2783;
+		}
+
+		.flaticon-facebook:before {
+			content: "\f09a";
+			font: var(--fa-font-brands);
+		}
+		.flaticon-instagram:before {
+			content: "\f16d";
+			font: var(--fa-font-brands);
+		}
+		.flaticon-twitter:before {
+			content: "\f099";
+			font: var(--fa-font-brands);
+		}	
+		.flaticon-youtube:before {
+			content: "\f167";
+			font: var(--fa-font-brands);
+		}	
+		.flaticon-linkedin:before {
+			content: "\f08c";
+			font: var(--fa-font-brands);
+		}	
+		.flaticon-rss:before {
+			content: "\f09e";
+			font: var(--fa-font-solid);
+		}			
+		[class*=" flaticon-"]:after, [class*=" flaticon-"]:before, [class^=flaticon-]:after, [class^=flaticon-]:before {
+			font-size: 24px;
+			font-style: normal;
+		}		
+		#social p.take-it {
+			color: #f2f1e6;
+			font-size: 50px;
+			line-height: normal;
+			margin: 0 102px 10px 0;
+        }
+		#social li {
+			margin: 5px;
+		}
+
+		#contact li, #social li {
+			position: relative;
+		}
+		#contact li, #social li, .in-line li {
+			display: inline-block;
+			vertical-align: top;
+		}	
+		#social li a {
+			display: block;
+			height: 40px;
+			width: 40px;
+			background: #f2f1e6;
+			text-align: center;
+			text-decoration: none;
+			line-height: 44px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+        }
+        
+        /* Me */
 
         .header-top {
             width: 100%;
@@ -81,7 +163,7 @@
         }
 
         .section-icons > li {
-            width: 80px;
+            width: 40px;
             height: 80px;
             list-style-type: none;
             margin-right: 20px;
@@ -173,11 +255,18 @@
 
         aside {
             width: 100%;
-            height: 48px;
-            text-align: center;
-            background: #442674;
+            /* height: 48px; */
+            /* text-align: center; */
+            /* background: #442674; */
             padding-top: 6px;
         }
+        
+        #terms {
+			color: #f2f1e6;
+			background: #442674;
+			padding: 6px 20px;
+			text-align: center;
+		}
 
         aside > small {
             width: 742px;
@@ -319,7 +408,46 @@
                 </a>
             </div>
         </div>
-        <div class="footer-purple">
+        <div class="purple-bg">
+            <aside id="social" class="container cf">
+                <div id="social-left">
+                    <p class="take-it">A great deal, easier</p>
+                    <ul>
+                        <li id="facebook">
+                            <a href="https://www.facebook.com/chillinsurance" title="Like the Chill Insurance Facebook page" target="_blank">
+                                <i class="glyph-icon flaticon-facebook"></i>
+                            </a>
+                        </li>
+                        <li id="instagram">
+                            <a href="https://www.instagram.com/chill_insurance/?hl=en" title="Follow Chill Insurance on Instagram" target="_blank">
+                                <i class="glyph-icon flaticon-instagram"></i>
+                            </a>
+                        </li>
+                        <li id="twitter">
+                            <a href="https://twitter.com/chill_insurance" title="Follow Chill Insurance on Twitter" target="_blank">
+                                <i class="glyph-icon flaticon-twitter"></i>
+                            </a>
+                        </li>
+                        <li id="youtube">
+                            <a href="https://www.youtube.com/channel/UCvGopAbVDKrgStzFwaZvhPg" title="Subscribe to the Chill Insurance YouTube channel" target="_blank">
+                                <i class="glyph-icon flaticon-youtube"></i>
+                            </a>
+                        </li>
+                        <li id="linkedin">
+                            <a href="https://www.linkedin.com/company/chill-insurance" title="Connect to Chill Insurance on LinkedIn" target="_blank">
+                                <i class="glyph-icon flaticon-linkedin"></i>
+                            </a>
+                        </li>
+                        <li id="rss">
+                            <a href="https://feeds.feedburner.com/chill-insurance" title="Subscribe to the Chill Insurance RSS Feed" target="_blank">
+                                <i class="glyph-icon flaticon-rss"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <!-- <div class="footer-purple">
             <p>A great deal, easier</p>
             <ul>
                 <li class="footer-icon">
@@ -352,8 +480,8 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <aside>
+        </div> -->
+        <aside id="terms">
             <small>
                 Copyright © Chill Insurance. All rights reserved. Chill Insurance Ltd t/a Chill Insurance is regulated by the Central Bank of Ireland.<br>
                 Registered Number 506021. Registered in the Republic of Ireland.
