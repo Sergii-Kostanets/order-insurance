@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-family: Arial, Helvetica,sans-serif;
+            font-weight: normal;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1366px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            width: 100%;
+            height: 25px;
+            background: #5A2293 0% 0% no-repeat padding-box;
+        }
+
+        .header-logo {
+            margin-top: 20px;
+            margin-left: 165px;
+            width: 220px;
+        }
+
+        h1,
+        .section-info,
+        .section-icons {
+            margin-left: 175px;
+            margin-right: 175px;
+        }
+
+        h1,
+        .section-info,
+        h5,
+        .footer-purple > p {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 43px;
+            text-align: left;
+            line-height: 43px;
+            font-size: 36px;
+            font-weight: 800;
+            color: #5A2293;
+        }
+
+        .section-info {
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 800;
+            color: #5A2293;
+        }
+
+        .section-icons {
+            margin-bottom: 40px;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .section-icons > li {
+            width: 80px;
+            height: 80px;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+        }
+
+        .footer-cream {
+            width: 100%;
+            height: 142px;
+            background: #EBEAE2;
+            border: 1px solid #E8E7DF;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: auto;
+            padding-top: 16px;
+            padding-right: 183px;
+            padding-bottom: 21px;
+            padding-left: 183px;
+        }
+
+        .footer-contacts {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer-telephone,
+        .footer-address {
+            margin: 0 40px 20px 0;
+        }
+
+        .footer-telephone > a {
+            text-decoration: none;
+        }
+
+        .footer-telephone > a,
+        .footer-address > p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #404040;
+        }
+
+        h5 {
+            width: 117px;
+            height: 27px;
+            text-align: left;
+            color: #5A2293;
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 5px;
+        }
+
+        .footer-logo > a > img {
+            height: 220px;
+            margin-top: -42px;
+        }
+
+        .footer-purple {
+            width: 100%;
+            height: 151px;
+            background: #5A2293;
+            padding: 10px 183px 0;
+        }
+
+        .footer-purple > p {
+            width: 490px;
+            height: 60px;
+            text-align: left;
+            font-size: 50px;
+            line-height: 60px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        .footer-purple > ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer-icon {
+            margin: 5px;
+        }
+
+        aside {
+            width: 100%;
+            height: 48px;
+            text-align: center;
+            background: #442674;
+            padding-top: 6px;
+        }
+
+        aside > small {
+            width: 742px;
+            height: 33px;
+            color: #FFFFFF;
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        @media screen and (max-width: 960px) {
+
+            .footer-cream {
+                height: 100%;
+                padding: 0 10%;
+            }
+
+            .footer-contacts {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .footer-logo > a > img {
+                margin-top: -20px;
+            }
+
+            .header-logo,
+            h1,
+            .section-info,
+            .section-icons {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            .footer-purple {
+                margin: 0;
+                padding: 0 10%;
+            }
+
+            .footer-purple > p {
+                width: 100%;
+                height: auto;
+                font-size: 35px;
+                line-height: unset;
+                margin: 10px 0;
+            }
+
+            aside {
+                height: 100%;
+            }
+
+        }
+
+
+        @media screen and (max-width: 490px) {
+
+            .footer-cream {
+                flex-direction: column;
+            }
+
+            .footer-purple {
+                height: 100%;
+            }
+
+            .footer-icon {
+                margin: 0 1%;
+            }
+
+            .footer-purple > ul {
+                flex-direction: column;
+            }
+
+            .footer-icon {
+                margin: 10px auto;
+            }
+
+            aside {
+                padding: 2px;
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-top"></div>
+        <div class="header-logo">
+            <a href="https://www.chill.ie/">
+                <img src="https://www.chill.ie/images/logo-new.svg" alt="Chill Insurance">
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <h1>The Chill Website Is Not Accessible From Your Location</h1>
+        <p class="section-info">
+            If you are an existing customer and need assistance, please call us on +353 1400 3400.
+        </p>
+        <p class="section-info">
+            You can also get in touch with us on social media:
+        </p>
+        <ul class="section-icons">
+            <li>
+                <a href="http://www.facebook.com/chillinsurance" title="Chill Insurance Facebook" target="_blank" class="facebook">
+                    <img src="https://www.chill.ie/images/facebook2.svg" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/chill_insurance" title="Chill Insurance Instagram" target="_blank" class="instagram">
+                    <img src="https://www.chill.ie/images/instagram2.svg" alt="Instagram" />
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/chill_insurance" title="Chill Insurance Twitter" target="_blank" class="twitter">
+                    <img src="https://www.chill.ie/images/twitter2.svg" alt="Twitter" />
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-cream">
+            <div class="footer-contacts">
+                <div class="footer-telephone">
+                    <h5>Telephone</h5>
+                    <a href="tel:01400 3400">01 400 3400</a>
+                </div>
+                <div class="footer-address">
+                    <h5>Address</h5>
+                    <p>
+                        Chill Insurance House, Ravenscourt Office Park<br>
+                        Sandyford, Dublin 18
+                    </p>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <a href="https://www.chill.ie/">
+                    <img src="https://www.chill.ie/images/logo-new.svg" alt="Chill Insurance" width="220" height="140">
+                </a>
+            </div>
+        </div>
+        <div class="footer-purple">
+            <p>A great deal, easier</p>
+            <ul>
+                <li class="footer-icon">
+                    <a href="https://www.facebook.com/chillinsurance" title="Like the Chill Insurance Facebook page" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2931/2931615.png" alt="Facebook" height="40px" width="40px">
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://www.instagram.com/chill_insurance/?hl=en" title="Follow Chill Insurance on Instagram" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384047.png" alt="Instagram" height="40px" width="40px">
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://twitter.com/chill_insurance" title="Follow Chill Insurance on Twitter" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384049.png" alt="Twitter" height="40px" width="40px">
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://www.youtube.com/channel/UCvGopAbVDKrgStzFwaZvhPg" title="Subscribe to the Chill Insurance YouTube channel" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3992/3992550.png" alt="YouTube" height="40px" width="40px">
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="https://www.linkedin.com/company/chill-insurance" title="Connect to Chill Insurance on LinkedIn" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn" height="40px" width="40px">
+                    </a>
+                <li class="footer-icon">
+                    <a href="https://feeds.feedburner.com/chill-insurance" title="Subscribe to the Chill Insurance RSS Feed" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3537/3537119.png" alt="RSS" height="40px" width="40px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <aside>
+            <small>
+                Copyright © Chill Insurance. All rights reserved. Chill Insurance Ltd t/a Chill Insurance is regulated by the Central Bank of Ireland.<br>
+                Registered Number 506021. Registered in the Republic of Ireland.
+            </small>
+        </aside>
+    </footer>
+</body>
+</html>
